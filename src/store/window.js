@@ -11,7 +11,6 @@ const useWindowStore = create(
       set((state) => {
         const win = state.windows[windowkey];
         if (!win) return;
-
         win.isOpen = true;
         win.zIndex = state.nextZIndex;
         win.data = data ?? win.data;
